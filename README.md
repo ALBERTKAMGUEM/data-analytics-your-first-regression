@@ -1,62 +1,55 @@
 # Introduction
+Ce projet a été réalisé dans le cadre de ma formation en Data Analytics avec Le Wagon.
 
-## 📁 Setup
+L'objectif est de développer un modèle de Machine Learning capable de prédire le Win Rating d'un joueur NBA à partir de ses statistiques de jeu.
 
-To make challenge completion simpler, we have added terminal instructions to challenges that have test suites.
+Ce projet permet de mettre en pratique les principales étapes d'un projet de régression supervisée, depuis la préparation des données jusqu'à l'évaluation du modèle et la réalisation de prédictions.
 
-If you haven't already, **copy the terminal instructions at the top of this page and run them in your terminal**.
+Objectifs
 
-When you first run the challenge setup, all tests will fail. This is expected - you haven't written any code yet.
+Comprendre le fonctionnement de la régression linéaire.
 
-## Jupyter Notebooks
+Identifier les variables explicatives et la variable cible.
 
-**📍 In your terminal**, run this command to start Jupyter:
+Préparer et séparer les données d'entraînement et de test.
 
-```bash
-jupyter notebook your_first_regression.ipynb
-```
+Construire et comparer deux modèles de régression.
 
-## Common Test Patters for Machine Learning - 🚧 READ THIS 🚧
+Évaluer leurs performances avec le coefficient R².
 
-Tests check specific **variables** in your code to ensure you've completed the required steps. For example, a test might check:
+Standardiser les données avec StandardScaler.
 
-- That a variable called `df` exists and contains data
-- That `X_train` has the correct shape
-- That your model produces reasonable predictions
+Prédire le Win Rating d'un nouveau joueur.
 
-**Important:** Follow the variable names specified in the instructions. If the instructions say "store your result in `model`", the test will look for a variable called exactly `model`.
+Méthodologie
 
-Typical test patterns for Machine Learning:
+1. Préparation des données
 
-- **Shape checks:** `AssertionError: Expected shape (100, 4), got (100, 3)` → You're missing a column or row
--- **Type checks:** `AssertionError: Expected DataFrame, got ndarray` → Convert your data structure
--- **Existence checks:** `AttributeError: 'ChallengeResult' object has no attribute 'model'` → You didn't create or didn't name a required variable
--- **Value checks:** `AssertionError: Score should be between 0 and 1` → Check your calculation logic
+Exploration du jeu de données NBA et identification des variables pertinentes.
 
-### When you're finished with the challenge:
+2. Construction des modèles
 
-1. **Save your notebook** (File → Save in Jupyter, or `Cmd/Ctrl + S`)
-2. Go back to the terminal tab where Jupyter is running
-3. Press `Ctrl + C` to stop the Jupyter server
-4. You'll see a message asking: `Shutdown this notebook server (y/[n])?`
-5. Type `y` and press Enter to confirm
+3. Évaluation des performances
 
-## 🚀 Test Your Solution
+Résultat : amélioration relative de 17,1 % du score R².**
 
-After completing the exercises in your notebook:
+Le modèle utilisant plusieurs variables obtient de meilleures performances prédictives.
 
-**📍 In your terminal** (use your second terminal tab - keep Jupyter running in the first), run:
+ 4. Prédiction sur un nouveau joueur
 
-```bash
-make
-```
+Le modèle a été utilisé pour estimer le Win Rating d'un nouveau joueur NBA à partir de ses statistiques.
 
-This will run all tests and show you which parts are complete and which need more work. If you passed all tests in the notebook, this should be all green.
+Cette étape illustre l'utilisation du Machine Learning pour accompagner une prise de décision fondée sur les données.
 
-If your result is all green here, but you don't see it reflected on Kitt:
+💡 Principaux enseignements
 
-```bash
-git add .
-git commit -m "Committing everything"
-git push
-```
+Ce projet m'a permis de renforcer mes compétences en :
+
+- Régression linéaire simple et multiple
+- Préparation et standardisation des données
+- Entraînement et évaluation des modèles
+- Analyse comparative des performances
+- Prédiction sur de nouvelles observations
+- Utilisation de Python et Scikit-learn
+
+
